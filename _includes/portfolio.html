@@ -1,0 +1,43 @@
+<section id="portfolio">
+   	
+   	<div class="intro-wrap">
+
+   		<div class="row narrow section-intro with-bottom-sep animate-this">
+   			<div class="col-twelve">
+   				<h3>Showcase</h3>
+   				<h1>Some Of My Work.</h1>  				   			
+   			</div>   		
+   		</div> <!-- end row section-intro -->   		
+
+   	</div> <!-- end intro-wrap -->   	
+
+   	<div class="row portfolio-content">
+   		<div class="col-twelve">
+   			<div id="folio-wrap" class="bricks-wrapper">
+            {% for cl in site.work %}
+               {% for port in cl.design %}
+               <!-- start folio-item -->
+   				<div class="brick folio-item">
+   					<div class="item-wrap animate-this" data-src="{{port.galleryimage}}" data-sub-html="#01" > 	
+   						<a href="#" class="overlay">
+   							<img src="{{port.portfolioimage}}" alt="{{ port.title }}">	                     
+   							<div class="item-text">
+   								<span class="folio-types">
+   								</span>
+   								<h3 class="folio-title"></h3>	     					   
+   							</div>                                        
+   						</a>  			
+   					</div> <!-- end item-wrap -->
+
+   					<div id="01" class='hide'>
+
+   					</div>
+   				</div> <!-- end folio-item -->
+               {% endfor %}
+            {% endfor %}
+
+   			</div> <!-- end folio-wrap -->
+   		</div> <!-- end twelve -->
+   	</div> <!-- end portfolio-content -->   	
+
+   </section>  <!-- end portfolio -->
