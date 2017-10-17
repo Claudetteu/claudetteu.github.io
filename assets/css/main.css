@@ -54,6 +54,13 @@
 .sponsor-text{
   color:#c1c1c1;
 }
+
+@media (max-width: 475px) { 
+  .map{
+    width: auto !important;
+    height: 460px;
+  }
+}
 /* ===================================================================
  *  01. webfonts and iconfonts - (_document-setup)
  *
@@ -1430,7 +1437,7 @@ header .header-logo a {
   border-top: 1px dotted rgba(255, 255, 255, 0.03);
 }
 #menu-nav-wrap .nav-list li a {
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 243, 254, 0.96);
   display: block;
 }
 #menu-nav-wrap .nav-list li a:hover, 
@@ -2041,7 +2048,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #portfolio .intro-wrap {
   padding: 15rem 0 21rem;
-  background: #b53690;
+  background: #00BCD4;
 }
 #portfolio .section-intro h3 {
   color: rgba(242, 242, 242, 0.5);
